@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Cadastro Fácil</title>
+</head>
+<body>
+    <div class="form">
+        <h1>Cadastro Fácil</h1>
+        <form action="" class="formulario">
+            <h2>Preencha as informações</h2>
+
+            <label for="nome">Nome*</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome aqui">
+
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Seu sobrenome aqui">
+
+            <label for="dt">Data de nascimento</label>
+            <input type="date" id="dt" name="dt">
+
+            <label for="email">E-mail*</label>
+            <input type="email" id="email" name="email" placeholder="E-mail aqui">
+
+            <label for="senha">Senha* (até 12 caracteres, incluindo letras maiúsculas, minúsculas, números e caracteres especiais.)</label>
+            <input type="password" id="senha" name="senha" placeholder="Crie sua senha">
+            <div id="senhaErro" class="erro"></div>
+
+            <label for="csenha">Confirme a senha*</label>
+            <input type="password" id="csenha" name="csenha" placeholder="Confirme sua senha">
+            <div id="csenhaErro" class="erro"></div>
+
+            <label for="act">Aceito todos os termos*<input type="checkbox" name="aceitoTermos" id="act"></label>
+            <div id="termosErro" class="erro"></div>
+
+            <input type="button" value="Cadastrar!" id="botao">
+            <h3 id="final">Todas as opções com * são obrigatórios</h3>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
